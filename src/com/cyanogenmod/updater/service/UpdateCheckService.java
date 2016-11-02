@@ -239,12 +239,12 @@ public class UpdateCheckService extends IntentService
         JSONArray channels = new JSONArray();
 
         switch(updateType) {
-            case Constants.UPDATE_TYPE_SNAPSHOT:
-                channels.put("snapshot");
+            case Constants.UPDATE_TYPE_BETA:
+                channels.put("beta");
                 break;
-            case Constants.UPDATE_TYPE_NIGHTLY:
+            case Constants.UPDATE_TYPE_STABLE:
             default:
-                channels.put("nightly");
+                channels.put("stable");
                 break;
         }
         JSONObject params = new JSONObject();
