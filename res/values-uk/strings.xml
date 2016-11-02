@@ -10,7 +10,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
-  <string name="app_name">Оновлення CyanogenMod</string>
+  <string name="app_name">Оновлення AOSParadox</string>
   <string name="display_name">Оновлення</string>
   <string name="unknown">Невідомий</string>
   <!-- Menu and dialog box strings -->

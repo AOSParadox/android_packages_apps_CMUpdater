@@ -10,7 +10,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
-  <string name="app_name">CM atnaujinimai</string>
+  <string name="app_name">PAR atnaujinimai</string>
   <string name="display_name">Atnaujinimai</string>
   <string name="unknown">Nežinoma</string>
   <!-- Menu and dialog box strings -->

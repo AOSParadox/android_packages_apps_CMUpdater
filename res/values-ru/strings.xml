@@ -10,7 +10,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
-  <string name="app_name">Обновление CyanogenMod</string>
+  <string name="app_name">Обновление AOSParadox</string>
   <string name="display_name">Обновления</string>
   <string name="unknown">Неизвестно</string>
   <!-- Menu and dialog box strings -->
@@ -42,7 +42,7 @@
   <string name="no_updates_found">Нет доступных обновлений</string>
   <string name="update_check_failed">Не удалось выполнить поиск обновлений. Проверьте подключение к Интернету и повторите попытку.</string>
   <string name="not_new_updates_found_ticker">Доступно обновление системы</string>
-  <string name="not_new_updates_found_title">Обновления CyanogenMod</string>
+  <string name="not_new_updates_found_title">Обновления AOSParadox</string>
   <string name="not_action_download">Загрузить</string>
   <string name="data_connection_required">Необходимо подключение к Интернету</string>
   <!-- Permission check -->
