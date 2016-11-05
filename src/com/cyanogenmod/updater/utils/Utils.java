@@ -136,16 +136,16 @@ public class Utils {
     }
 
     public static int getUpdateType() {
-        int updateType = Constants.UPDATE_TYPE_STABLE;
+        int updateType = Constants.UPDATE_TYPE_NIGHTLY;
         try {
             String cmReleaseType = SystemProperties.get(
-                    Constants.PROPERTY_PAR_RELEASETYPE);
+                    Constants.PROPERTY_CM_RELEASETYPE);
 
-            // Treat anything that is not BETA as STABLE
+            // Treat anything that is not SNAPSHOT as NIGHTLY
             if (!cmReleaseType.isEmpty()) {
                 if (TextUtils.equals(cmReleaseType,
-                        Constants.PAR_RELEASETYPE_BETA)) {
-                    updateType = Constants.UPDATE_TYPE_BETA;
+                        Constants.CM_RELEASETYPE_SNAPSHOT)) {
+                    updateType = Constants.UPDATE_TYPE_SNAPSHOT;
                 }
             }
         } catch (RuntimeException ignored) {

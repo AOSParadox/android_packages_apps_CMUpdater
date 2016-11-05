@@ -166,7 +166,7 @@ public class UpdatesSettings extends PreferenceActivity implements
         // Force a refresh if UPDATE_TYPE_PREF does not match release type
         int updateType = Utils.getUpdateType();
         int updateTypePref = mPrefs.getInt(Constants.UPDATE_TYPE_PREF,
-                Constants.UPDATE_TYPE_BETA);
+                Constants.UPDATE_TYPE_SNAPSHOT);
         if (updateTypePref != updateType) {
             updateUpdatesType(updateType);
         }
@@ -922,10 +922,10 @@ public class UpdatesSettings extends PreferenceActivity implements
         String date = DateFormat.getLongDateFormat(this).format(lastCheck);
         String time = DateFormat.getTimeFormat(this).format(lastCheck);
 
-        String cmReleaseType = Constants.PAR_RELEASETYPE_STABLE;
+        String cmReleaseType = Constants.CM_RELEASETYPE_NIGHTLY;
         int updateType = Utils.getUpdateType();
-        if (updateType == Constants.UPDATE_TYPE_BETA) {
-            cmReleaseType = Constants.PAR_RELEASETYPE_BETA;
+        if (updateType == Constants.UPDATE_TYPE_SNAPSHOT) {
+            cmReleaseType = Constants.CM_RELEASETYPE_SNAPSHOT;
         }
 
         String message = getString(R.string.sysinfo_device) + " " + Utils.getDeviceType() + "\n\n"
