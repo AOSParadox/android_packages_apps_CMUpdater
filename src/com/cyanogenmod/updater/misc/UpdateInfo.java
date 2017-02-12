@@ -161,7 +161,7 @@ public class UpdateInfo implements Parcelable, Serializable {
     public static String extractUiName(String fileName) {
         String deviceType = Utils.getDeviceType();
         String uiName = fileName.replaceAll("\\.zip$", "");
-        return uiName.replaceAll("-" + deviceType + "-?", "");
+        return uiName //.replaceAll("-" + deviceType + "-?", "");
     }
 
     @Override
